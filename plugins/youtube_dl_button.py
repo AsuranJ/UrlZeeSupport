@@ -8,6 +8,7 @@ logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
+from yt_dlp import YoutubeDL, DownloadError
 import asyncio
 import json
 import math
